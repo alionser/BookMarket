@@ -10,4 +10,6 @@ public class Person
     
     //TODO: хранить дату рождения
     public int Age { get; set; }
+    
+    public Customer Customer { get; set; }
 }
