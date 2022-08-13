@@ -21,7 +21,12 @@ public class Startup
         {
             app.UseDeveloperExceptionPage();
         }
+
+        app.UseRouting();
         
-        app.UseWelcomePage();
+        app.UseEndpoints(routeBuilder =>
+        {
+            routeBuilder.MapControllers();
+        });
     }
 }
